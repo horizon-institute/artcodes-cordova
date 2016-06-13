@@ -1,5 +1,7 @@
-var exec = require('cordova/exec');
-
-exports.coolMethod = function(arg0, success, error) {
-    exec(success, error, "Artcodes", "coolMethod", [arg0]);
+window.scanArtcode = function(experience, callback)
+{
+    cordova.exec(callback, function(err)
+	{
+        callback('Error: ' + err);
+    }, "Artcodes", "scanArtcode", [experience]);
 };

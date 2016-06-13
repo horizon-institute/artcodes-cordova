@@ -2,20 +2,23 @@
 <plugin id="uk.ac.horizon.artcodes" version="3.2.2" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
 	<name>Artcodes</name>
 	<author>Kevin Glover</author>
-	<description>Artcodes marks a paradigm shift in visual recognition, offering difference to discerning brands. We design visually beautiful images and encode them, resulting in the same interactivity as that of the QR code but with a more visually engaging and playful experience. Images can be the identical with unique codes or the opposite visually unique with identical codes. This interplay offers a new opportunity for visual interaction within, product, packaging, service and interaction design.</description>
+	<description>Artcodes marks a paradigm shift in visual recognition, offering difference to discerning brands. We design visually beautiful images and encode them, resulting in the same interactivity as that of the QR code but with a more visually
+		engaging and playful experience. Images can be the identical with unique codes or the opposite visually unique with identical codes. This interplay offers a new opportunity for visual interaction within, product, packaging, service and interaction
+		design.</description>
 	<license>GNU Affero General Public License v3</license>
 	<js-module name="Artcodes" src="www/Artcodes.js">
 		<clobbers target="cordova.plugins.Artcodes"/>
 	</js-module>
 	<platform name="android">
-		<config-file parent="/*" target="res/xml/config.xml">
+		<config-file target="AndroidManifest.xml" parent="/*">
+			<uses-permission android:name="android.permission.CAMERA"/>
+		</config-file>
+		<config-file target="res/xml/config.xml" parent="/*">
 			<feature name="Artcodes">
 				<param name="android-package" value="uk.ac.horizon.artcodes.Artcodes"/>
 			</feature>
 		</config-file>
-		<config-file parent="/*" target="AndroidManifest.xml">
-		</config-file>
-		<framework src="uk.ac.horizon.artcodes:artcodes-scanner:3.2.0" />
+		<framework src="uk.ac.horizon.artcodes:artcodes-scanner:3.+"/>
 		<source-file src="src/android/Artcodes.java" target-dir="src/uk/ac/horizon/artcodes/Artcodes"/>
 	</platform>
 </plugin>
