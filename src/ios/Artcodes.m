@@ -27,6 +27,7 @@
 		}
 
 		[self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+		[self.viewController dismissViewControllerAnimated:true completion:nil];
     }];
 	[self.viewController presentViewController:scanViewController animated:YES completion:nil];
 }
