@@ -12,7 +12,7 @@ Install the plugin
 To use
 
 ```js
-	window.scanArtcode({name: "Test Experience", actions:[{codes:["1:1:3:3:4"]}]}, function(marker) {
+	Artcodes.scan({name: "Test Experience", actions:[{codes:["1:1:3:3:4"]}]}, function(marker) {
 		alert(marker);
 	});
 ```

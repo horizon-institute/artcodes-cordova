@@ -6,6 +6,7 @@
 	<license>GNU Affero General Public License v3</license>
 	<js-module name="Artcodes" src="www/Artcodes.js">
 		<clobbers target="cordova.plugins.Artcodes"/>
+		<clobbers target="Artcodes"/>
 	</js-module>
 	<platform name="android">
 		<config-file parent="/*" target="AndroidManifest.xml">
