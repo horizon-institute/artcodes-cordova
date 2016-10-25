@@ -28,3 +28,4 @@ FOUNDATION_EXPORT const unsigned char ArtcodesScannerVersionString[];
 #import <ArtcodesScanner/FrameProcessor.h>
 #import <ArtcodesScanner/SceneDetails.h>
 #import <ArtcodesScanner/MarkerDrawer.h>
+#import <ArtcodesScanner/ImageProcessor.h>
