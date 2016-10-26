@@ -23,3 +23,4 @@ To get it running in iOS, the ArtcodesScanner and SwiftyJSON frameworks must bot
  - In the general tab, scroll down to 'Embedded Binaries'
  - Using the +, add ArtcodesScanner.framework and SwiftyJSON.framework to Embedded Binaries.
  - Remove duplicates from 'Linked Frameworks and Libraries'
+ - May also need to set the Build Setting 'Always Embed Swift Standard Libraries' to 'Yes' 
