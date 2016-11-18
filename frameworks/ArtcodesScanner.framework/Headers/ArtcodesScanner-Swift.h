@@ -154,6 +154,7 @@ SWIFT_CLASS("_TtC15ArtcodesScanner10Experience")
 @property (nonatomic, copy) NSArray<Action *> * _Nonnull actions;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull pipeline;
 @property (nonatomic, copy) void (^ _Nullable callback)(void);
+@property (nonatomic, copy) NSString * _Nullable requestedAutoFocusMode;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (Action * _Nullable)actionForCode:(NSString * _Nonnull)code;
 @end
