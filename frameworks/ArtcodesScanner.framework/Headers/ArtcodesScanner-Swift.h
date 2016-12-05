@@ -222,12 +222,13 @@ typedef SWIFT_ENUM(NSInteger, Match) {
 
 @class NSDictionary;
 @class NSCoder;
-@class UIView;
 @class UIButton;
+@class UIView;
 
 SWIFT_CLASS("_TtC15ArtcodesScanner21ScannerViewController")
 @interface ScannerViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified actionButton;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified thumbnailView;
 @property (nonatomic, strong) id <MarkerDetectionHandler> _Nullable markerDetectionHandler;
 @property (nonatomic, strong) Experience * _Null_unspecified experience;
 + (ScannerViewController * _Nullable)scanner:(NSDictionary * _Nonnull)dict closure:(void (^ _Nonnull)(NSString * _Nonnull))closure;
@@ -242,8 +243,6 @@ SWIFT_CLASS("_TtC15ArtcodesScanner21ScannerViewController")
 - (void)viewWillDisappear:(BOOL)animated;
 - (void)viewDidDisappear:(BOOL)animated;
 - (id <MarkerDetectionHandler> _Nonnull)getMarkerDetectionHandler;
-- (void)onCodeDetected:(NSString * _Nonnull)code;
-- (UIView * _Nonnull)getThumbnailView;
 @end
 
 #pragma clang diagnostic pop
