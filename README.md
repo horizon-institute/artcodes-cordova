@@ -27,10 +27,10 @@ function yourFunction() {
 	);
 }
 
+// like most plugins, Artcodes.scan(...) can only be called sometime after the deviceready event e.g.
 document.addEventListener('deviceready', function () {
-	// like most plugins, Artcodes.scan(...) can only be called sometime after the deviceready event
 	yourFunction();
-}
+}, false);
 ```
 
 
@@ -49,5 +49,5 @@ To get it running in iOS, the ArtcodesScanner and SwiftyJSON frameworks must bot
    - *(Swift 2.X only step)* Rename:
      - `ArtcodesScanner_swift2.framework` &rarr; `ArtcodesScanner.framework`
      - `SwiftyJSON_swift2.framework` &rarr; `SwiftyJSON.framework`. 
- - In Xcode under 'Linked Frameworks and Libraries' remove duplicates and frameworks ending with `_swift2.framework` by selecting and using the - button (you can also delete those ending with `_swift2.framework` on the left hand menu under <projectname> &rarr; Frameworks)
+ - In Xcode under 'Linked Frameworks and Libraries' remove duplicates and frameworks ending with `_swift2.framework` by selecting and using the - button (you can also delete those ending with `_swift2.framework` on the left hand menu under \<projectname\> &rarr; Frameworks)
  - You may also need to set the Build Setting 'Always Embed Swift Standard Libraries' to 'Yes' 
