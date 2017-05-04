@@ -40,8 +40,12 @@
 -(MarkerImage*)drawMarker:(Marker*)marker scene:(SceneDetails*)scene;
   
 @end
-  
+
 @interface SquareMarkerDrawer : NSObject<MarkerDrawer>
+
+@end
+
+@interface XMasSquareMarkerDrawer : SquareMarkerDrawer
 
 @end
 

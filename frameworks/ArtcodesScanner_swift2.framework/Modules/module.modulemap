@@ -1,0 +1,10 @@
+framework module ArtcodesScanner {
+  umbrella header "ArtcodesScanner.h"
+
+  export *
+  module * { export * }
+}
+
+module ArtcodesScanner.Swift {
+    header "ArtcodesScanner-Swift.h"
+}

@@ -27,9 +27,15 @@
 			    <param name="onload" value="true" />
 			</feature>
 		</config-file>
+		<framework src="frameworks/ArtcodesScanner_swift2.framework" custom="true" embed="true"/>
+		<framework src="frameworks/SwiftyJSON_swift2.framework" custom="true" embed="true"/>
 		<framework src="frameworks/ArtcodesScanner.framework" custom="true" embed="true"/>
 		<framework src="frameworks/SwiftyJSON.framework" custom="true" embed="true"/>
 		<framework src="ImageIO.framework" />
 		<source-file src="src/ios/Artcodes.m"/>
+		<preference name="IOS_CAMERA_DESC_STRING" default="We use the camera to scan Artcodes." />
+		<config-file target="*-Info.plist" parent="NSCameraUsageDescription">
+			<string>$IOS_CAMERA_DESC_STRING</string>
+		</config-file>
 	</platform>
 </plugin>
